@@ -1,0 +1,233 @@
+@import url(http://fonts.googleapis.com/css?family=Days+One);
+
+body {
+	text-align:center; vertical-align: center; margin:0px; padding: 0px; background-color:#333333;
+	font: 600 14/24px Verdana, Geneva, Arial, Helvetica, sans-serif, sans-serif;
+}
+h1 {margin: 10px; font-size: 2em; font-weight: bold;}
+h2 {margin: 10px; font-size: 1.5em; font-weight: bold;}
+h3 {margin: 10px; font-size: 1.17em; font-weight: bold;}
+h4 {margin: 10px; font-size: 0.9em; font-weight: bold;}
+.description { float: left; width: 147px; margin-top: 1.5em; margin-left: 1.1em; position:relative; text-align: left;}
+.number {font-size: 1.5em; font-weight: bold; color:#BD3632; margin-bottom: -20px; font-family: 'Days One', sans-serif;}
+.number-large {font-size: 1.5em;}
+.number-medium {font-size: 1.3em}
+.number-small {font-size: 1em;}
+.text {color: #333333; font-size: 0.9em; font-family: Sans-Serif;}
+.text-small {font-weight: 400;}
+#logo {text-align:center; margin: 10px; margin-left: 0px;}
+.image {float:left; width:70px; margin-top:1.5em; margin-left:1.3em;}
+.bottomtext {color:#000000; padding-top: 1em; padding-bottom: .7em; font-size: 0.9em; font-weight: 400;}
+.bottomtext-left {float:left; margin-left: 1em;}
+.bottomtext-right {float:right; margin-right: 1.5em;}
+.moreinfo {color: #333333;font-weight: normal; font-family: 'Lato', sans-serif; font-size: 1.2em;  text-align:left;  border: 3px double black;padding: 2em; display: none;  position:absolute;  z-index: 100; background-color:#CCCCCC;width: 250px; height: auto;}
+.morelink a:active, .morelink a:hover {color:#0033CC;}
+
+.outbox:before,
+.outbox:after {
+  content: "";
+  display: table;
+}
+.outbox:after {
+  clear: both;
+}
+.outbox {
+	width:80%;
+	min-width: 301px;
+	max-width: 893px;
+	height: auto;
+	min-height: 400px;
+	background:#31526f;
+	margin:40px auto;
+	padding: 10px;
+	text-align:center;
+	position:relative;
+	*zoom: 1;
+}
+.headercontainer:before,
+.headercontainer:after {
+  content: "";
+  display: table;
+}
+.headercontainer:after {
+  clear: both;
+}
+.headercontainer {
+	text-align:center;
+	position:relative;
+	width:95%;
+	height: auto;
+	min-height:90px;
+	color:#000000;
+	background:#FFFFFF;
+	margin-bottom:10px;
+	padding: 10px;
+	-webkit-border-radius: 35px;
+	-moz-border-radius: 35px;
+	border-radius: 35px;
+}
+headerleft {
+	float: left;
+}
+headerright {
+	float: left;
+	text-align: center;
+	padding-left: 35px;
+}
+.lefttile {
+	width: 281px;
+	float: left;
+	margin-bottom: 10px;
+	/*margin-left: 10px;*/
+}
+.centertile {
+	width: 281px;
+	float: left;
+	margin-bottom: 10px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.righttile {
+	width: 281px;
+	float: left;
+	margin-bottom: 10px;
+	/*margin-left: 10px;*/
+}
+@media all and (max-width: 1024px) {
+	headerleft, headerright{
+		float: none;
+		width: auto;
+	}
+}
+/*@media all and (max-width: 1091px) {*/
+@media screen and (max-width: 1110px) {
+/* The dashboard is changed to two columns */
+	h1 {font-size: 1.5em;}
+	.outbox {
+		width: 592px;
+		height: auto;
+	}
+	headerleft, headerright{
+		float: none;
+		width: auto;
+	}
+	.lefttile, .centertile, .righttile {
+		margin: 0px;
+		padding-left: 10px;
+		padding-bottom: 10px;
+		position: 
+	}
+}
+@media screen and (max-width: 740px) {
+/* The dashboard is changed to one columns */
+	.outbox {
+		width: 301px;
+		height: auto;
+	}
+	h1 {font-size: 1.17em;}
+}
+
+.boxtop{
+	width: 281px;
+	height: 161px;
+	background:#FFFFFF;
+	-webkit-border-top-left-radius: 35px;
+	-webkit-border-top-right-radius: 35px;
+	-moz-border-radius-topleft: 35px;
+	-moz-border-radius-topright: 35px;
+	border-top-left-radius: 35px;
+	border-top-right-radius: 35px;
+}
+.boxbottom {
+	width: 281px;
+	height: auto;
+	min-height: 40px;
+	background-color:#eeeeee;	
+	border-bottom: 5px;
+	-webkit-border-bottom-left-radius: 35px;
+	-webkit-border-bottom-right-radius: 35px;
+	-moz-border-radius-bottomleft: 35px;
+	-moz-border-radius-bottomright: 35px;
+	border-bottom-left-radius: 35px;
+	border-bottom-right-radius: 35px;
+}
+
+.querybox {
+	width: 80%;
+	min-width: 300px;
+	max-width: 500px;
+	height: auto;
+	min-height: 30px;
+	color:#000000; background-color:#6699cc;
+	padding: 3px;
+	margin: auto;
+	-webkit-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	border-radius: 20px; 
+}
+#querytext {float: left;}
+#pivotoptions{float: right; margin-left: 10px;}
+
+.chartcontainer {
+	width: 80%;
+	min-width: 300px;
+	max-width: 800px;
+	height: auto;
+	margin:0px auto;
+	text-align:center;
+	position: relative;
+} 
+
+.querytable {border: 1px Gray Solid Gray; border-collapse: collapse; border-spacing: 0; height:auto; width: 80%; margin:auto; padding:0px;}
+.querytable1 {border: none; height:100%; width: 100%;}
+.querytablecaption {font-family: 'Days One', sans-serif; font-size: 16px; color: #ffffff;}
+.querytableheader {font-family: Comic Sans MS; font-size: 14px; font-weight: bold; background-color: #ff7f00; color: #000000; border: 1px Solid Gray; text-align: center;}
+.querytableheader1 {font-family: Comic Sans MS; font-size: 15px; background-color: #ffaa56; color: #000000; padding: 5px !important;}
+.querytablecell {font-family: Comic Sans MS; font-size: 14px; background-color: #ffffff; color: #000000; border: 1px solid Gray; padding-left: 5px !important;}
+.querytablecell1 {font-family: Comic Sans MS; font-size: 12px;  background-color: #ffffff; color: #000000; padding: 5px !important;}
+.querytableoddrow {font-family: Comic Sans MS; font-size: 14px; background-color: #ffd4aa; color: #000000; border: 1px solid Gray; padding-left: 5px !important;}
+.querytableoddrow1 {font-family: Comic Sans MS; font-size: 12px; background-color: #ffd4aa; color: #000000; padding: 5px !important;}
+
+ .highcharts-tooltip span {
+	height:auto;
+	width:300px;
+	#background-color:grey;
+	overflow:auto;
+	white-space:normal !important;
+}
+
+table {
+  width: 80%; 
+  min-width: 300px;
+  max-width: 800px;
+  border-collapse: collapse;
+  margin: auto; 
+}
+td, th { 
+  padding: 2px; 
+  border: none; 
+  color: white;
+  text-align: left;
+}
+@media screen and (max-width: 800px) {
+	.querytablecell, .querytableoddrow {
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 400px) {
+	#querytext, #pivotoptions {
+		float: none;
+		width: auto;
+	}
+	.querybox, .chartcontainer, .querytable {
+		width: 300px;
+	}
+	.querytablecell, .querytableoddrow {
+		font-size: 10px;
+	}
+}
+
+

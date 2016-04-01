@@ -114,6 +114,7 @@
 	</form>	
 	<div id="container" class="chartcontainer" style="width: 80% !important; height: 400px;" role="image" aria-label="This chart used the data from below table."></div>
 	<div id="querytable"></div>
+	<?php include 'footer.inc' ?>
 </center>
 <script>
 function formQuery(opt) {

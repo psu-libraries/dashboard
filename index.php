@@ -171,21 +171,24 @@ $(document).ready(function() {
 	$("#year").append(last_year.toString());
 	
 	//Databases
-	var query = new google.visualization.Query('http://spreadsheets.google.com/tq?key=1z1Sq8Z-uzRRmGi_u6rzxqdaNUm_1bL99bIuZx2F9-OA&pub=1');
-	var sql = "select * where A=" + last_year.toString();
+	var query = new google.visualization.Query('http://spreadsheets.google.com/tq?key=1CkwGymzAXuqOQXN5vApQtu6VMMs8WK1ch_iEzk28kZ0&pub=1');
+	var sql = "select *";
 	query.setQuery(sql);
 	query.send(handleQueryResponse);
 	function handleQueryResponse(response) {
 		data = response.getDataTable();
 		var rowno = data.getNumberOfRows();
 		var colno = data.getNumberOfColumns();
-		var sum = 0;
-		for (var i=0; i<rowno; i++) {
-			for (var j=2; j<colno; j++) {
-				sum  = sum + data.getValue(i, j);
+		var total = 0;
+		for (var i=4; i<colno; i++) {
+			if (data.getColumnLabel(i) == last_year) {
+				for (var j=0; j<rowno; j++) {
+					total += data.getValue(j, i);
+				}
+				break;
 			}
 		}
-		$("#database").append(addCommas(sum));
+		$("#database").append(addCommas(total));
 		data = null;
 	};
 });
@@ -350,4 +353,5 @@ $(document).ready(function() {
 		</div>
 	</div>	
 </body>
+<?php include 'footer.inc' ?>
 </html>

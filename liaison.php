@@ -173,6 +173,7 @@
 	<br>
 	<div id="container1" class="chartcontainer" style="width: 80% !important; height: 400px;" role="image" aria-label="This chart used the data from below table."></div>
 	<div id="querytable1"></div>
+	<?php include 'footer.inc' ?>
 </center>
 </body>
 </html>

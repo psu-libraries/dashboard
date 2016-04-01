@@ -37,7 +37,7 @@
 		data.removeColumn(1); //remove Source column
 		colno --;
 
-		insertTable('querytable', data, 'Top Ten Biomedical Journals', 'This table lists the top ten biomedical journals across all Penn State.', 'format1');
+		insertTable('querytable', data, 'Major Biomedical Journals', 'This table lists the top ten biomedical journals across all Penn State.', 'format1');
 		data = null;
 	}
 	google.setOnLoadCallback(sendAndDrawTable);
@@ -45,18 +45,18 @@
 </head>
 <body>
 <center>
-	<h1><font color='#FFFFFF'>Top Ten Biomedical Journals</font></h1>
+	<h1><font color='#FFFFFF'>Major Biomedical Journals</font></h1>
 	<br>
 	<table>
 		<tr><td>
 		&nbsp;&nbsp;&nbsp;The Harrell Health Sciences Library maintains a scoped list of over 20,000 biomedical and science journals for the Penn State Hershey Community. 
-		The following data is the number of articles read in the top biomedical journals across all of Penn State. 
-		See if your favorite journal is on the top ten list:
+		The following data is the number of articles read in ten of the major biomedical journals across all of Penn State.
 		</td></tr>
 	</table>
 	<br>
 	<div id="querytable"></div>
 	<h3><font color='#FFFFFF'>*All data is vendor-supplied.</font></h3>
+	<?php include 'footer.inc' ?>
 </center>
 </body>
 </html>

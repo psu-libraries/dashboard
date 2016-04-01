@@ -93,6 +93,7 @@
 	<div id="container" class="chartcontainer" style="width: 80% !important; height: 400px;"role="image" aria-label="This chart used the data from below table."></div>
 	<div id="querytable"></div>
 	<h4><font color='#FFFFFF'>*Incomplete data available from January, 2015 to March, 2015, showing lower totals than actual.</font></h4>
+	<?php include 'footer.inc' ?>
 </center>
 <script>
 function formQuery(opt) {

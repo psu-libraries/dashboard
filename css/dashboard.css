@@ -21,8 +21,9 @@ h4 {margin: 10px; font-size: 0.9em; font-weight: bold;}
 .bottomtext-left {float:left; margin-left: 1em;}
 .bottomtext-right {float:right; margin-right: 1.5em;}
 .moreinfo {color: #333333;font-weight: normal; font-family: 'Lato', sans-serif; font-size: 1.2em;  text-align:left;  border: 3px double black;padding: 2em; display: none;  position:absolute;  z-index: 100; background-color:#CCCCCC;width: 250px; height: auto;}
-.morelink a:active, .morelink a:hover {color:#0033CC;}
-
+a.morelink, a.morelink:active, a.morelink:hover {color:#0033CC; text-decoration: underline;}
+a.footerlink, a.footerlink:active, a.footerlink:hover {font-size: 14px; color: white; text-decoration: none;}
+a.footerlink:hover {text-decoration: underline;}
 .outbox:before,
 .outbox:after {
   content: "";
@@ -229,5 +230,4 @@ td, th {
 		font-size: 10px;
 	}
 }
-
 
